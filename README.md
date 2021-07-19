@@ -2,6 +2,8 @@
 
 [中文介绍](https://github.com/playdog-io/snapshot4substrate/blob/main/README_zh.md)
 
+***
+
 You can use this tool to quickly retrieve all account address balances on a substrate chain with only one node data, making it easy to restart a test chain or a tiny chain based on the balance information  **(You can restart a chain periodically, reducing node capacity requirements and thus reducing chain maintenance costs).**  If you want to understand the specific principle, you can refer to this article: https://www.shawntabrizi.com/substrate/transparent-keys-in-substrate
 ***
 ## steps
