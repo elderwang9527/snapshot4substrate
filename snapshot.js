@@ -2,6 +2,8 @@ import { ApiPromise, WsProvider } from '@polkadot/api';
 import { Keyring } from '@polkadot/keyring';
 
 const keyring = new Keyring({ type: 'sr25519' });
+const wsProvider = new WsProvider('wss://rpc.subplay.xyz');
+const api = await ApiPromise.create({ provider: wsProvider });
 
 var hex = [
     "0x6ed845460993640bd8ff446bf172b4f23a7c5b3c8786b244beb05e3d57147330",
@@ -456,13 +458,13 @@ var hex = [
 ]
 
 const unsub = await api.query.system.account.multi(hex, (balances) => {
-  function snapshot() {
-    for (var i = 0; i <= 448; i++) {
-      console.log('[')
-      console.log(`"` + keyring.encodeAddress(hex[i]) + `",`)
-      console.log(balances[i].data.free/1000000000000000 + " ")
-      console.log('],')
+    function snapshot() {
+        for (var i = 0; i <= 448; i++) {
+            console.log('[')
+            console.log(`"` + keyring.encodeAddress(hex[i]) + `",`)
+            console.log(balances[i].data.free / 1000000000000000 + " ")
+            console.log('],')
+        }
     }
-  }
-  snapshot()
+    snapshot()
 });
