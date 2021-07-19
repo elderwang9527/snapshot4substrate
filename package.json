@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@polkadot/api": "^4.4.1",
+    "@polkadot/keyring": "^6.0.5"
+  }
+}

@@ -19,9 +19,9 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 3  
 ![](images/2021-07-19-17-39-16.png)
 编辑snapshot.js文件：
-a，将之得到的keys.json文件复制粘贴到var = hex后。 
-b，将wss://rpc.subplay.xyz 替换为目标链的wss接口。  
-c，将for循环中的数字448替换为keys.json中的条目总数-1。  
+a，将之得到的keys.json文件复制粘贴到var = hex后。   
+b，将wss://rpc.subplay.xyz 替换为目标链的wss接口。    
+c，将for循环中的数字448替换为keys.json中的条目总数-1。    
 
 4
 
