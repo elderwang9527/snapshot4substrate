@@ -2,7 +2,7 @@
 
 [English version](https://github.com/playdog-io/snapshot4substrate/blob/main/README_zh.md)
 
-只需拥有一个节点数据，就能使用此工具快速获取一条substrate链上的所有账户地址余额，从而可以很轻松的根据余额信息重启一条测试链或小型链。**可以定期重启，降低节点容量需求，从而降低链的维护成本。**如你想了解具体原理，可以参考此文章：https://www.shawntabrizi.com/substrate/transparent-keys-in-substrate
+只需拥有一个节点数据，就能使用此工具快速获取一条substrate链上的所有账户地址余额，从而可以很轻松的根据余额信息重启一条测试链或小型链。可以定期重启，降低节点容量需求，从而降低链的维护成本。如你想了解具体原理，可以参考此文章：https://www.shawntabrizi.com/substrate/transparent-keys-in-substrate
 ***
 ## 使用步骤
 
