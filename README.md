@@ -26,7 +26,6 @@ Execute the above command on the server where the node is running, noting that 1
 As shown in the picture, keep the left "0x" and the right 64 chars. But delete the chars in middle. Get a new file named it keys.json.
 
 4    
-![](images/2021-07-19-17-39-16.png)
 modify snapshot.js:  
 a, paste the keys.json content after "var = hex".   
 b, replace wss://rpc.subplay.xyz with your chain's wss endpoint.   
@@ -35,9 +34,9 @@ d, note that the line 465 should modify according to your chain's tokenDecimals.
 
 5    
 ![](images/2021-07-19-18-03-23.png)
-Execute: node snapshot.js > balances.log, wait a moment and manually Ctrl + C to end the command and get the file as shown in the figure. You can read all accounts' balance on that now.
+Execute: node snapshot.js > balances.log, wait a moment and get the file as shown in the figure. You can read all accounts' balance on that now.
 
-The above data is easy to read. But if you need to restart a chain, delete / 1000000000000000 from step 4-d and paste the resulting data into customspec.json.
+The above data is easy to read. But if you need to restart a chain, annotate the line 465 and unannotate the line 466. Then put the data you got to the customSpec.json. Then you can restart a chain by that file.
 
 ***
 
