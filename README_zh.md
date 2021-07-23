@@ -26,7 +26,6 @@ curl -H "Content-Type: application/json" -d '{"id":1, "jsonrpc":"2.0", "method":
 
 
 4    
-![](images/2021-07-19-17-39-16.png)
 编辑snapshot.js文件：  
 a，将之得到的keys.json文件复制粘贴到var = hex后。   
 b，将wss://rpc.subplay.xyz 替换为目标链的wss接口。    
@@ -35,9 +34,9 @@ d，注意在第465行代码里根据你启动链的代币精度调整此数据�
 
 5    
 ![](images/2021-07-19-18-03-23.png)
-执行node snapshot.js > balances.log，稍等片刻后手动ctrl+c结束命令得到如图所示的balances.log文件，即可清楚的查看各余额数据。
+执行node snapshot.js > balances.log，稍等片刻后得到如图所示的balances.log文件，即可清楚的查看各余额数据。
 
-以上得到的数据利于阅读。如你需要重启一条链，请将第4-d步的 / 1000000000000000删除，再将得到的数据粘贴进customSpec.json即可。
+以上得到的数据利于阅读。如你需要重启一条链，请将第4-d步的465行注释掉，解注释466。将得到的数据粘贴进customSpec.json即可。
 
 ***
 

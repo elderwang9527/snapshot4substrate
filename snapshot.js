@@ -463,8 +463,10 @@ const unsub = await api.query.system.account.multi(hex, (balances) => {
             console.log('[')
             console.log(`"` + keyring.encodeAddress(hex[i]) + `",`)
             console.log(balances[i].data.free / 1000000000000000 + " ")
+            // console.log(balances[i].data.free + " ")
             console.log('],')
         }
     }
-    snapshot()
+    snapshot();
+    process.exit()
 });
