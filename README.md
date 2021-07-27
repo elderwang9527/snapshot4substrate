@@ -42,3 +42,8 @@ The above data is easy to read. But if you need to restart a chain, annotate the
 
 ![](images/2021-07-19-18-15-48.png)
 **Please note the this way we get the balance that sum the locked and unlocked token. But it won't count the token which accounts pledged to get their online name.**
+***
+If you want to buy me a beer or buy me some tons of beers, you can send any amount of DOT to the address below.
+ 
+14V6J6nH9sEwW9TgZ7mPccontHj8eJRM7hAq1WR5xPfvCfZa
+
