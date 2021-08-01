@@ -463,7 +463,7 @@ const unsub = await api.query.system.account.multi(hex, (balances) => {
             console.log('[')
             console.log(`"` + keyring.encodeAddress(hex[i]) + `",`)
             console.log(balances[i].data.free / 1000000000000000 + " ")
-            // console.log(balances[i].data.free + " ")
+            // console.log(balances[i].data.free + " ")      // console.log(balances[i].data.free.toLocaleString('fullwide', {useGrouping:false})  + " ")   use this if you want to show the result with normal notation instead of scientific notation
             console.log('],')
         }
     }
